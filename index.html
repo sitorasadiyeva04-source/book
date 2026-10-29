@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Книга рецептов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Книга рецептов</h1>
+
+    <!-- Меню поиска и фильтров -->
+    <div class="menu">
+        <input type="text" id="search" placeholder="Поиск по названию...">
+        
+        <select id="filter">
+            <option value="All">Все блюда</option>
+            <option value="Easy">легко</option>
+            <option value="Medium">средний</option>
+        </select>
+
+        <button id="sortTime">По времени</button>
+        <button id="sortRating">По рейтингу</button>
+    </div>
+
+    <p id="loading">Загрузка...</p>
+    <p id="error" style="color: red; display: none;"></p>
+    <p id="counter"></p>
+
+    <!-- Сетка карточек -->
+    <div id="list" class="cards-box"></div>
+
+    <p id="empty" style="display: none;">Ничего не найдено</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
